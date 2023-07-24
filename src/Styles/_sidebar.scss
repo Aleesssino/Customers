@@ -14,7 +14,38 @@
         padding-bottom: 9px;
     }
 
-    li {
-        cursor: pointer;
+    .sidebarrow {
+        
+        height: 40px;
+        width: 300px;
+        margin-left: 10px;
+        padding: 10px 0px 0px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #f1f4f8;
+        }
     }
+
+     #active {
+        background-color: #f1f4f8;
+        #icon {
+            color: #407cff;
+        }
+    }
+
+    #icon {
+        color: $iconColor;
+        margin-left: 16px;
+    }
+
+    #title {
+        margin-left: 23px;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
 }

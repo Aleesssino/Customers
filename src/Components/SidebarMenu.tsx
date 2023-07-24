@@ -8,22 +8,22 @@ export const SidebarMenu = [
     {
         title: "Customer Overview",
         icon: <PublicIcon/>,
-        link: "/"
+        link: "/Home"
     },
     {
         title: "Reports",
         icon: <FormatListBulletedIcon/>,
-        link: "/"
+        link: "/reports"
     },
     {
         title: "File transcodings",
         icon: <NoteAddRoundedIcon/>,
-        link: "/"
+        link: "/files"
     },
     {
         title: "Notification Center",
         icon: <NotificationsIcon/>,
-        link: "/"
+        link: "/notifications"
     }
 
 ]
