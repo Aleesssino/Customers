@@ -1,0 +1,88 @@
+@import "./variables";
+
+.homeContainer {
+    position: absolute;
+    top: 43px;
+    left: 320px;
+
+    .headline {
+        
+        margin: 55px 1054px 10px 71px;
+        font-family: InterUI;
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.37px;
+        color: #000;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .homeContainer {
+        left: 50px;
+    }
+}
+
+
+// searchbar
+
+.wrapper {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+    
+        width: 251px;
+        height: 30px;
+        margin: 40px 64.5px 25px 71px;
+        padding: 5px 24px 4px 8.2px;
+        border-radius: 3px;
+        border: solid 1px #e2e7ee;
+        background-color: #fff;
+
+        input {
+            font-family: InterUI;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.62;
+            letter-spacing: normal;
+            color: #9fa7bb;
+            outline: none;
+            border: none;
+        }
+
+        .searchIcon {
+            color: #9fa7bb;
+        }
+    }
+
+    // add customer button 
+
+    @mixin circle-shape($size) {
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+      }
+    .addCustomerButton {
+        @include circle-shape($button-size);
+        background-color: $button-color;
+        color: #fff;
+        font-size: $button-font-size;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: $button-hover-color;
+        }
+    }
+}

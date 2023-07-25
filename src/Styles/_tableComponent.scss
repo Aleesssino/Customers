@@ -1,0 +1,85 @@
+// TableComponent.scss
+
+table {
+  width: 96%;
+  margin-bottom: 259px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #e2e7ee;
+  margin-left: 71px;
+
+  border-collapse: collapse;
+
+  font-family: InterUI;
+
+  thead {
+    th {
+      height: 30px;
+      padding: 9px 20px;
+      background-color: #f1f4f8;
+
+
+      &:first-child {
+        text-align: left;
+        /* Align "CUSTOMER" header to the left */
+        margin-left: 20px;
+        /* Add left margin to "CUSTOMER" header */
+      }
+    }
+  }
+
+  tbody {
+    tr {
+
+        // hover effect
+        &:hover {
+          cursor: pointer;
+          background-color: #eff2f7;
+          margin-left: 40px;
+          //  padding: 2px 0 0;
+          border-radius: 4px;
+        }
+      
+      td {
+        padding: 10px;
+        text-align: center;
+        /* Align other columns to the center */
+        .customer-info {
+          display: flex;
+          align-items: center;
+          margin-left: 10px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+
+          span {
+            margin-right: 10px;
+          }
+
+          .dropdown {
+            position: relative;
+
+            button {
+              cursor: pointer;
+            }
+
+            .dropdown-content {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              display: none;
+              /* Add additional styles for the dropdown menu content */
+            }
+          }
+
+          &:hover .dropdown-content {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

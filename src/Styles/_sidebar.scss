@@ -5,6 +5,7 @@
     width: 320px;
     background-color: $whiteColor;
     border-right: 1px grey;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
 
     p {
         color: #c3c8d5;
@@ -48,4 +49,24 @@
         font-size: 15px;
     }
 
+}
+
+@media screen and (max-width: 990px) {
+    .sidebar {
+              
+      #title {
+        display: none;
+      }
+
+      width: 50px;
+
+      p {
+        display: none;
+      }
+
+      .sidebarrow {
+        margin-left: 0px;
+        width: 50px;
+      }
+    }
 }
